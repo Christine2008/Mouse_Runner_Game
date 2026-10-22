@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mouse Runner</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<main class="console">
+  <div class="top"><span class="brand">MOUSE RUNNER</span><i class="led"></i></div>
+
+  <div class="bezel">
+    <div class="screen">
+      <canvas id="game" width="304" height="380"></canvas>
+      <div id="overlay" class="overlay">
+        <canvas id="ico" width="8" height="8"></canvas>
+        <h1 id="ttl">MOUSE RUNNER</h1>
+        <p id="msg">Collect every coin and all 10 foods. Dodge the 5 cats!</p>
+        <div id="lvls" class="lvls">
+          <button class="lvl easy" data-lv="easy">EASY</button>
+          <button class="lvl mod" data-lv="moderate">MODERATE</button>
+          <button class="lvl hard" data-lv="hard">HARD</button>
+        </div>
+        <button id="act" class="wood">PLAY</button>
+        <p class="hint">Arrows / WASD or swipe</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="sta" class="pill go">START</button>
+    <button id="pau" class="pill stop">PAUSE</button>
+  </div>
+  <div class="spk"></div>
+</main>
+<script src="game.js?v=3"></script>
+</body>
+</html>
